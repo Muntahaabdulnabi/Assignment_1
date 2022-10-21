@@ -58,8 +58,34 @@
                 
             </Button>
         </Grid>
-        <ListView Grid.Column="1" x:Name="lv_contacts" Margin="10 0 0 0">
-            
+        <ListView Grid.Column="1" 
+                  x:Name="lv_contacts" 
+                  Margin="10 0 0 0"
+                  HorizontalContentAlignment="Stretch"
+                  SelectionChanged="lv_contacts_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding FullName}"/>
+                            <TextBlock Text="{Binding Email}" FontSize="10"/>
+                        </StackPanel>
+                        <Button Grid.Column="1"
+                                Click="tbn_Delete_Click"
+                                Content="&#xE74D;"
+                                FontFamily="Segoe MDL2 Assets"
+                                Background="Transparent"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Right">
+                            
+                        </Button>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
 
     </Grid>

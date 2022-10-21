@@ -43,5 +43,15 @@ namespace AdressBok
                 
             }); 
         }
+
+        private void tbn_Delete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void lv_contacts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
