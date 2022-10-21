@@ -7,6 +7,46 @@
         mc:Ignorable="d"
         Title="Adresbok" Height="550" Width="700">
     <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Förnamn"/>
+                <TextBox/>
+
+                <TextBlock Text=""/>
+                <TextBox/>
+
+                <TextBlock/>
+                <TextBox/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock/>
+                        <TextBox/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <TextBlock/>
+                        <TextBox/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2">
+                        <TextBlock/>
+                        <TextBox/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
 
     </Grid>
 </Window>
