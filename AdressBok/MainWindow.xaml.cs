@@ -24,5 +24,10 @@ namespace AdressBok
         {
             InitializeComponent();
         }
+
+        private void tbn_Add_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
