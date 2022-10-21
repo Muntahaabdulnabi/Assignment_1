@@ -17,14 +17,14 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <StackPanel Grid.Column="0">
-                <TextBlock Text="Förnamn"/>
-                <TextBox x:Name="tb_FirstName"/>
+                <TextBlock Text="Förnamn" Style="{StaticResource label}"/>
+                <TextBox x:Name="tb_FirstName" Style="{StaticResource field}"/>
 
-                <TextBlock Text="Efternamn"/>
-                <TextBox x:Name="LastName"/>
+                <TextBlock Text="Efternamn" Style="{StaticResource label}"/>
+                <TextBox x:Name="LastName" Style="{StaticResource field}"/>
 
-                <TextBlock Text="E-post"/>
-                <TextBox x:Name="tb_Email"/>
+                <TextBlock Text="E-post" Style="{StaticResource label}"/>
+                <TextBox x:Name="tb_Email" Style="{StaticResource field}"/>
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -33,16 +33,16 @@
                         <ColumnDefinition Width="3*"/>
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0">
-                        <TextBlock Text="Gatunamn"/>
-                        <TextBox x:Name="tb_StreetName"/>
+                        <TextBlock Text="Gatunamn" Style="{StaticResource label}"/>
+                        <TextBox x:Name="tb_StreetName" Style="{StaticResource field}"/>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
-                        <TextBlock Text="Postnummer"/>
-                        <TextBox x:Name="tb_PostalCode"/>
+                        <TextBlock Text="Postnummer" Margin="5 0 0 4" Style="{StaticResource label}"/>
+                        <TextBox x:Name="tb_PostalCode" Margin="6 0" Style="{StaticResource field}"/>
                     </StackPanel>
                     <StackPanel Grid.Column="2">
-                        <TextBlock Text="Ort"/>
-                        <TextBox x:Name="City"/>
+                        <TextBlock Text="Ort" Style="{StaticResource label}"/>
+                        <TextBox x:Name="City" Style="{StaticResource field}"/>
                     </StackPanel>
                 </Grid>
             </StackPanel>
