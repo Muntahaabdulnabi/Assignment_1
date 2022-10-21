@@ -27,6 +27,7 @@ namespace AdressBok
         {
             InitializeComponent();
             contacts = new ObservableCollection<ContactPerson>(); //skapar en ny Lista
+            lv_contacts.ItemsSource = contacts;
         }
 
         private void tbn_Add_Click(object sender, RoutedEventArgs e) 

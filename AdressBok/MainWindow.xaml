@@ -16,7 +16,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <StackPanel Grid.Column="0">
+            <StackPanel Grid.Column="0" >
                 <TextBlock Text="Förnamn" Style="{StaticResource label}"/>
                 <TextBox x:Name="tb_FirstName" Style="{StaticResource field}"/>
 
@@ -50,13 +50,17 @@
                     x:Name="tbn_Add"
                     Click="tbn_Add_Click"
                     Content="Lägg till"
+                    FontWeight="Bold"
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Right"
                     Margin="35 10"
-                    Padding="10">
+                    Padding="15">
                 
             </Button>
         </Grid>
+        <ListView Grid.Column="1" x:Name="lv_contacts" Margin="10 0 0 0">
+            
+        </ListView>
 
     </Grid>
 </Window>

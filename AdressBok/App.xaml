@@ -6,6 +6,7 @@
     <Application.Resources>
         <Style x:Key="label" TargetType="TextBlock">
             <Setter Property="Margin" Value="0 0 0 4"/>
+            <Setter Property="FontWeight" Value="Bold"/> 
         </Style>
         <Style x:Key="field" TargetType="TextBox">
             <Setter Property="Padding" Value="5"/>
