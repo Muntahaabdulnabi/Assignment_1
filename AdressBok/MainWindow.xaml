@@ -21,7 +21,7 @@
                 <TextBox x:Name="tb_FirstName" Style="{StaticResource field}"/>
 
                 <TextBlock Text="Efternamn" Style="{StaticResource label}"/>
-                <TextBox x:Name="LastName" Style="{StaticResource field}"/>
+                <TextBox x:Name="tb_LastName" Style="{StaticResource field}"/>
 
                 <TextBlock Text="E-post" Style="{StaticResource label}"/>
                 <TextBox x:Name="tb_Email" Style="{StaticResource field}"/>
@@ -42,7 +42,7 @@
                     </StackPanel>
                     <StackPanel Grid.Column="2">
                         <TextBlock Text="Ort" Style="{StaticResource label}"/>
-                        <TextBox x:Name="City" Style="{StaticResource field}"/>
+                        <TextBox x:Name="tb_City" Style="{StaticResource field}"/>
                     </StackPanel>
                 </Grid>
             </StackPanel>

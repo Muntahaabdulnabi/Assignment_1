@@ -1,5 +1,7 @@
-﻿using System;
+﻿using AdressBok.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,14 +22,25 @@ namespace AdressBok
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ObservableCollection<ContactPerson> contacts; // Det ska finnas en Lista
         public MainWindow()
         {
             InitializeComponent();
+            contacts = new ObservableCollection<ContactPerson>(); //skapar en ny Lista
         }
 
-        private void tbn_Add_Click(object sender, RoutedEventArgs e)
+        private void tbn_Add_Click(object sender, RoutedEventArgs e) 
         {
-
+            contacts.Add(new ContactPerson
+            {
+                FirstName = tb_FirstName.Text,
+                LastName = tb_LastName.Text,
+                Email = tb_Email.Text,
+                StreetName = tb_StreetName.Text,
+                PostalCode = tb_PostalCode.Text,
+                City = tb_City.Text,
+                
+            }); 
         }
     }
 }
