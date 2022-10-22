@@ -67,17 +67,23 @@ namespace AdressBok
             var button = sender as Button;
             var contact = (ContactPerson)button!.DataContext;
             contacts.Remove(contact);
+
+            ClearFields();
         }
 
         private void lv_contacts_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {           
+        {
+            try
+            {
                 var contact = (ContactPerson)lv_Contacts.SelectedItems[0]!;
                 tb_FirstName.Text = contact.FirstName;
                 tb_LastName.Text = contact.LastName;
                 tb_Email.Text = contact.Email;
                 tb_StreetName.Text = contact.StreetName;
                 tb_PostalCode.Text = contact.PostalCode;
-                tb_City.Text = contact.City;            
+                tb_City.Text = contact.City;
+            }
+            catch { }         
         }
     }
 }
