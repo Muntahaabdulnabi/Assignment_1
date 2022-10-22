@@ -59,7 +59,7 @@
             </Button>
         </Grid>
         <ListView Grid.Column="1" 
-                  x:Name="lv_contacts" 
+                  x:Name="lv_Contacts" 
                   Margin="10 0 0 0"
                   HorizontalContentAlignment="Stretch"
                   SelectionChanged="lv_contacts_SelectionChanged">
